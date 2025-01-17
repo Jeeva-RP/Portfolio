@@ -1,0 +1,96 @@
+/* General Project Page Styles */
+.projects {
+  padding: 90px;
+  color: #fff;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.projects-detail h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.project-category {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Each Project Card */
+.project {
+  width: 250px;
+  height: auto;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Soft border */
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle shadow */
+}
+
+.project:hover {
+  background: rgba(255, 255, 255, 0.2); /* Slightly brighter background on hover */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.2); /* Glowing effect */
+  transform: scale(1.05); /* Slight zoom effect */
+  border-color: rgba(255, 255, 255, 0.5); /* Highlight border on hover */
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  width: 100%;
+  height: 80px;
+  border-radius: 5px;
+  margin-bottom: 15px; /* Space between image and text */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Shadow for image */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+.project:hover .project-image {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); /* Enhanced shadow for image on hover */
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+.project-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.8); /* Softer white for text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project {
+    width: 200px;
+    height: auto;
+  }
+
+  .project-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-content p {
+    font-size: 0.9rem;
+  }
+}
